@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yangdianwen.plugindemo.SecuritySetup3">
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="点击勾选框开启防盗功能"
+    android:textSize="20sp"
+    />
+<TextView
+    android:text="防盗功能是否开启"
+    android:textSize="30sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableRight="@mipmap/my_unlock"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:onClick="next"
+            android:text="下一步"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:onClick="previous"
+            android:text="上一步"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+</LinearLayout>
